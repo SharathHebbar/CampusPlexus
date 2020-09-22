@@ -1,0 +1,22 @@
+<html>
+<head>
+	<title>Forgot</title>
+<link rel="stylesheet" href="{{url_for('static', filename='css/style3.css')}}">
+</head>
+<body>
+<form method="POST">
+<center>
+	<img src = "{{url_for('static', filename='cp.jpg')}}" alt = "cp" class = "cp">
+	<br/>
+	<b><h1>Campus Plexus </h1></b>
+    
+<h3>Forgot your password </h3>
+<input type ="text" placeholder="Enter E-mail id" name ="email" data-type="E-mail"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title = "Enter a valid email" required>
+<br/> 
+<input type ="password" placeholder="Enter new password" name ="newpass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required> 
+<br/>
+<button type="submit" name = "continue">Continue</button>
+</center>
+</form>
+</body>
+</html>
